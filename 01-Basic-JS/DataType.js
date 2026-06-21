@@ -9,7 +9,7 @@ age = 20 // ye ek number data type hai
 islogin = false // ye ek boolean data type hai jo true / false me hota hai serf ...
  
 
-// number => 2 to power 53
+// number => 2 to power 53 tk hote hai .. 
 // bigint => 52 se badi ( but jada ter normal numbers ko he use karte hai )
 // string => ""/ '' ( iske aander bali he string hoti hai )
 // boolean => true/false 
@@ -23,4 +23,4 @@ islogin = false // ye ek boolean data type hai jo true / false me hota hai serf 
 
 console.log(typeof 20); // number
 console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+console.log(typeof null); // object 
