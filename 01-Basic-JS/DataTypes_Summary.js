@@ -39,8 +39,8 @@ let obj = {
 console.log("Hello Sir");
  }
 
- console.log(typeof bigNumber);
- console.log(typeof functions);
+ console.log(typeof bigNumber); // result bigint aayega .. 
+ console.log(typeof functions); // result function he aayega ..
  /*---- -------------- Value of typeof  
 undefined = "undefined"
 Null = "object"
