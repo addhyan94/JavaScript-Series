@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning In JS </title>
+    <style>
+        body{
+            background-color:black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="myclass">
+        <h1 class="heading">Hello Sir</h1>
+        <h1 class="heading">Hii Sir</h1>
+        <p id="mypera">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+        <h2 class="titleclass" id="title">Dom Is a Document Object Model <span style="display: none;"> Its hhidden text</span></h2>
+        <input type="password" name="password" id="pass">
+
+        <ul>
+            <li class="list-items">1</li>
+            <li class="list-items">2</li>
+            <li class="list-items">3</li>
+            <li class="list-items">4</li>
+        </ul>
+    </div>
+<style>
+    /* sab browser ke console per kaam kr raha hai ye sab cheze baha chalake dekho ...... */
+
+    /*
+    document.getElementById('title').getAttribute
+ƒ getAttribute() { [native code] }
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'titleclass'
+document.getElementById('title').setAttribute('class', 'secondclass')
+undefined
+document.getElementById('title').getAttribute('class')
+'secondclass'
+document.getElementById('title').setAttribute('class', 'secondclass class')
+undefined
+document.getElementById('title').getAttribute('class')
+'secondclass class'
+title.style.backgroundColor = 'red'
+'red'
+title.style.Color = 'blue'
+'blue'
+
+title.textContent // jitna bhi text hota hai sab milta hai 
+'Dom Is a Document Object Model  Its hhidden text'
+
+title.innerHTML // isme full HTMl milta hai us class ya id me .. 
+'Dom Is a Document Object Model <span style="display: none;"> Its hhidden text</span>'
+
+title.innerText //  jitna samne dekh rahaha hai unta he dega 
+'Dom Is a Document Object Model'
+
+document.querySelector('h1') // ye kisi bhi cheez ko select kr leta hai .. simple bala serf ek ko select karta hai 
+<h1 class=​"heading">​Hello Sir​</h1>​
+document.querySelectorAll('h1') // ye all laga ahi to simple si bt hai sare h1 ko select karega ... 
+NodeList(2) [h1.heading, h1.heading]
+
+document.querySelector('input[type="password"]') // kisi bhi cheez ko select kar sakte hai .. 
+<input type=​"password" name=​"password" id=​"pass">​
+
+document.querySelector('div:first-child')// CSS me jese select karte the bese isme bhi kr sakte hai 
+null
+
+// aapni Ul per koi style karna kuch bhi karna JS se ho sakti ahi .. Let's Check It ----
+
+document.querySelector('ul') // pahle ul ko check kiya aa rahah ya ni 
+<ul>​…​</ul>​
+
+let myul = document.querySelector('ul') // ul ko myul ke aander store kiya 
+undefined
+
+myul // check kiya ki myul me kya kya hai 
+<ul>​…​</ul>​
+
+myul.querySelector('li') // fer myul ke li ko check kiya 
+<li>​…​</li>​::marker​"1"</li>​
+
+let turngreen = myul.querySelector('li') // fer li ko turngreen me store kiya 
+undefined
+
+turngreen.style.backgroundColor = "green" // turngreen ko style di bgc green 
+'green'
+
+turngreen.style.Color = "red" // uska color red kiya 
+'red'
+
+turngreen.innerHTML // li ka text check kiya  
+'1'
+
+turngreen.innerHTML = "One" // li ka text he change kr diya 
+'One'
+
+// Aab aapte hai querySelectorAll per ..............
+
+document.querySelectorAll('li') // sari li ko check kiya 
+NodeList(3) [li, li, li]
+
+
+let myli =  document.querySelectorAll('li') // sari li ko myli me store kiya 
+undefined
+
+myli // li ko check kiya 
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3
+// Note : jab bhi koi selectorAll se select karte hai to bo array ki form me ni hota ye nodelist ki form me hota hai dekhta array ke roop me hai but ni ye alag hota hai 
+
+myli.style.Color = 'green' // jab bhi SelectorAll ka use karte hai to usper ese he style ni lagayi ja sakti hai .. alag alag karke he lagayi ja sakti hai 
+
+let myli =  document.querySelectorAll('li')
+
+myli
+NodeList(3) [li, li, li] // this is a nodelist beacuse aapanne Quearyselectorall kiya tha to isme serf nodlist he banta hai .. or isme serf for each loop use hota hai 
+
+myli.forEach(function (l){
+    l.style.color = 'green'
+})
+
+document.getElementsByClassName("list-items")
+HTMLCollection(4) 
+//  yaha aapn ne class name se list ko access kiya hai is baje se isper aapan koi bhi loop ko apply ni kar sate hai 
+
+const list = document.getElementsByClassName("list-items")
+// loop ko apply karne ke liye array ki help se aapan kr sate hai ..
+        
+        Array.from(list).forEach( l=>{
+            console.log(l)
+        })
+
+        Array.from(list).forEach( l=>{
+            l.style.color = "red"
+        })
+
+        
+    */
+
+</style>
+</body>
+</html> 
