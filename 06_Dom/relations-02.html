@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+<style>
+   
+</style>
+</head>
+<body>
+    
+    <script>
+        const dev1 = document.createElement('div')
+        dev1.ClassName = "main"
+        // dev1.id = "Dev1"
+        
+        /*Just for Fun .. Aapan iski ID aapne aap change bali banate hai */
+        dev1.id = Math.round(Math.random() * 10 + 1)
+        console.log(dev1);
+        
+        dev1.setAttribute("title", "GTT")
+        dev1.style.backgroundColor = "green"
+        dev1.style.color = "white"
+        dev1.style.margin = "10px"
+        dev1.style.height = "10rem"
+        dev1.style.width = "10rem"
+        // dev1.innerText = "Hello.."
+
+        const addtxt = document.createTextNode('Hello Guys.....')
+        dev1.appendChild(addtxt)
+        document.body.appendChild(dev1)
+
+        /*Second Div banate ahi same type se ....*/
+        const div = document.createElement('div')
+        div.ClassName = 'div2'
+        div.id ='2div'
+
+        div.style.backgroundColor = 'red'
+        div.style.color = 'blue'
+        div.style.padding = '2rem'
+        div.style.display = 'flex'
+        div.style.justifyContent ='center'
+        // div.innerText = "Second div"
+        div.appendChild(document.createTextNode("This is a Second")) // same kaam inner text se ho raha tha but isse jada batter hota hai 
+        document.body.appendChild(div)
+        document.body.style.backgroundColor = '#212121'
+    </script>
+</body>
+</html>
