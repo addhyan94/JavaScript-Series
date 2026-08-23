@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello Everyone</h1>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul> -->
+<div class="parent">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+</div>
+
+<script>
+let pt = document.querySelector(".parent")
+// console.log(pt.children[1].innerHTML);
+
+for (let i = 0; i < pt.children.length; i++) {
+  
+    console.log(pt.children[i].innerHTML);    
+}
+ pt.children[1].style.color='red'
+
+// console.log(pt.firstElementChild.innerText);// parent ka first child(Element) Show karega
+// console.log(pt.lastElementChild.innerText);// parent ka Last child(Element) Show karega
+
+// const day1 = document.querySelector('.days')
+// console.log(day1.parentElement);// day1 ka parent show kar dega
+// console.log(day1.nextElementSibling.innerText); // day1 ka next element show kr dega
+
+// console.log("NODES: ", pt.childNodes); // This is a NodeList 
+
+
+
+
+</script>
+</body>
+</html>
