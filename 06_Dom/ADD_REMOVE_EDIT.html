@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+    <script>
+        document.body.style.backgroundColor = '#2196'
+        document.body.style.color = '#ffff'
+/*This is a Ffirst methord ..-> Aapan ko UL me ek or Li banana hai uske liye */
+        const ul = document.querySelector('ul')
+        let li = document.createElement('li')
+        li.innerText = "Rust"
+        ul.appendChild(li)
+        
+        /*Second Methord ....................*/
+        function add(name){
+            const li = document.createElement('li')
+            li.innerHTML = name
+            document.querySelector('.language').appendChild(li)
+        }
+        add('python');
+        add('C++');
+
+        /*Third Methord.....................*/
+
+        let addlang = (name => {
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(name))
+            // document.getElementsByClassName(".language").appendChild(li) // ye kaam ni karega kuki class name se .. sare select honge jitne usclass name per hoge NUT quearyselector se sef ek hoga isliye ye ni chalega 
+            document.querySelector('.language').appendChild(li)
+        });
+    addlang('Typescript');
+
+/*Yaha aab aapan EDIT karte hai ......................... */
+
+        // // const Second =  document.querySelector("li:nth-child(2)")
+        // // Second.replaceWith(document.createElement('li').textContent("GODOT")) // ye kaam ni karega neeche bataya gaya hai .... 
+        
+        // const Second = document.querySelector("li:nth-child(2)")
+        // // let newli = document.createElement('li').textContent = "GODOT" // ese kiya to list ni banega usko replace karega 
+        // let newli = document.createElement('li')
+        // newli.textContent = "GODOT"
+        // Second.replaceWith(newli) // isko proper node chaiye hota hai .. isliye sabse uper bala methord ni kaamkarega 
+
+        // const fisrtlang = document.querySelector("li:fisrt-child")
+        // fisrtlang.outerHTML = '<li>Swift</li>'
+
+/*Yaha aab aapan Remove karte hai .......................*/        
+
+        let lastlang = document.querySelector("li:last-child")
+        lastlang.remove()
+        //TypeScript Remove ho gaya hai ........ 
+        
+    </script>
+</body>
+</html>
