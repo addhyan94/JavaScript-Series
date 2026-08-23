@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI - Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+      .backbtn{
+            background-color: rgb(165, 138, 191);
+            height: 2em;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+        .backbtn a{
+            background-color: rgb(165, 138, 191);
+            color: black;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .mainbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+        margin-bottom: 1em;
+        }
+        .int{
+            margin-bottom: 1em;
+            font-size: 1.5em;
+        }
+        .int input{
+            font-size: .8em;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="backbtn"><a style="text-decoration: none;" href="../Project-Home.html">↩ - Back To Home </a></div>
+     <div class="mainbox">
+     <h1>BMI Calculator</h1>
+     <form >
+        <p class="int"><label for="height">Height In CM : </label><input type="number" id="height"></p>
+        <p class="int"><label for="width">Width In KG : </label><input type="number" id="width"></p>
+        <button>Calculator</button>
+        <div id="result"></div>
+        <div id="weight-guide">
+            <h3>BMI Weight Guide</h3>
+            <p>Under Weight = less then 18.6</p>
+            <p>Normal Range = 18.6 and 24.9</p>
+            <p>Overweight = Greater then 24.9</p>
+        </div>
+     </form>
+     </div>
+    <style>
+/* 2:51 */
+    </style>
+</body>
+</html> 
